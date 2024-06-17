@@ -1,0 +1,298 @@
+.header {
+    background-image: url("../assets/images/header_image.png");
+    height: auto;
+
+    &__menu {
+        width: 100%;
+        padding: 5% 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menu {
+
+            &__logo-container {
+                z-index: 10;
+                display: flex;
+                justify-content: center;
+            }
+
+            &__logo {
+                height: 100px;
+                padding-top: 4%;
+            }
+
+            &__open-btn {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                color: $mainColor;
+                font-size: 1.3rem;
+                font-family: font-punk-rock;
+
+                &:hover {
+                    cursor: pointer;
+                    color: white;
+                    background: radial-gradient($mainColor, transparent 75%);
+                }
+            }
+
+            &__options-menu {
+                width: 100%;
+                padding: 0 0 5%;
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                list-style: none;
+                align-items: center;
+
+                .options-menu {
+                    &__elto {
+                        height: fit-content;
+                        padding: 7px;
+
+                        .elto {
+                            &__link {
+                                text-decoration: none;
+                                color: $mainColor;
+                                font-size: 1.2rem;
+                                font-family: font-punk-rock;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                    text-underline-offset: 10px;
+                                    color: white;
+                                    background: radial-gradient($mainColor, transparent 75%);
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            &__rrss-menu {
+                width: 100%;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                text-transform: uppercase;
+                list-style: none;
+                justify-content: center;
+
+                .rrss-menu {
+                    &__rrss-elto {
+                        padding: 0 0.6%;
+
+                        .rrss-elto {
+                            &__logo {
+                                width: 30px;
+                                height: 30px;
+                                background: radial-gradient($mainColor, transparent 60%);
+
+                                &:hover {
+                                    background: radial-gradient(rgb(255, 255, 255), transparent 60%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 8px;
+    }
+
+    .header {
+        .menu {
+            &__logo {
+                scale: 1;
+            }
+        }
+    }
+}
+
+@media (min-height: 600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .header {
+        height: auto !important;
+
+        &__menu {
+            padding: 2% 8%;
+
+            .menu {
+
+                &__open-btn {
+                    visibility: hidden;
+                    position: absolute;
+                }
+
+                &__options-menu {
+                    width: 100%;
+                    padding: 0 0 0.5%;
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    text-transform: uppercase;
+                    list-style: none;
+                    justify-content: center;
+                    align-items: end;
+
+                    .options-menu {
+                        &__elto {
+                            height: fit-content;
+                            padding: 0.7% 1%;
+
+                            &:nth-child(odd),
+                            &:nth-child(even) {
+                                visibility: visible;
+                                position: relative;
+                            }
+
+                            .elto {
+                                &__link {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-family: font-punk-rock;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        width: 100%;
+        height: 110px !important;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-image: url("../assets/images/header_image.png");
+        background-position: right center;
+        align-items: inherit;
+        align-items: flex-end;
+
+        &__menu {
+            width: inherit;
+            height: 100%;
+            padding: 0;
+            display: flex;
+            flex-direction: inherit;
+            top: 12%;
+            align-items: inherit;
+            background: inherit;
+            background-color: inherit;
+            box-shadow: inherit;
+
+            .menu {
+
+                &__logo-container {
+                    display: flex;
+                    justify-content: start;
+                }
+
+                &__logo {
+                    padding: 0% 0% 1%;
+                    display: inherit;
+                    position: relative;
+                    left: 4%;
+                    background-image: inherit;
+                    visibility: visible;
+                    scale: 1.1;
+                }
+
+                &__open-btn {
+                    visibility: hidden;
+                    position: absolute;
+                }
+
+                &__options-menu {
+                    width: 100%;
+                    padding: 0 0 0.5%;
+                    display: flex;
+                    flex-direction: row;
+                    text-transform: uppercase;
+                    list-style: none;
+                    font-size: large;
+                    justify-content: center;
+                    align-items: end;
+
+                    position: absolute;
+                    right: 50%;
+                    translate: 50%;
+
+                    .options-menu {
+                        &__elto {
+                            height: fit-content;
+                            padding: 0.7% 1%;
+                            font-size: 2.5rem;
+
+                            &:nth-child(odd),
+                            &:nth-child(even) {
+                                visibility: visible;
+                                position: relative;
+                            }
+
+                            .elto {
+                                &__link {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-size: 1.7rem;
+                                    font-family: font-punk-rock;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+                &__rrss-menu {
+                    width: auto;
+                    height: fit-content;
+                    background: radial-gradient($mainColor, transparent 75%);
+                    padding: 1% 3%;
+                    display: flex;
+                    align-items: end;
+                    flex-direction: row;
+
+                    position: absolute;
+                    right: 0%;
+
+                    .rrss-menu {
+                        &__rrss-elto {
+                            padding: 0.7% 1%;
+
+                            .rrss-elto {
+                                &__logo {
+                                    width: 30px;
+                                    height: 30px;
+
+                                    &:hover {
+                                        background: radial-gradient(rgb(255, 255, 255), transparent 60%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

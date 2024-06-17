@@ -1,0 +1,337 @@
+.detalle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-image: url("../assets/images/fondo_portada.jpeg");
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__breadcrumbs {
+        width: 100%;
+        padding-left: 2%;
+        display: flex;
+        list-style: none;
+
+        >li {
+            padding: 2px;
+        }
+
+        >li::after {
+            content: " > ";
+        }
+
+        >li:nth-last-child(1)::after {
+            content: "";
+            background-color: brown;
+        }
+
+        .breadcrumbs {
+            &__link {
+                text-decoration: none;
+                color: var(--text-color-footer-bacground);
+            }
+        }
+    }
+
+    .breadcrumb-link.selected,
+    .breadcrumb-link:hover {
+        font-weight: 600;
+    }
+
+    &__content {
+        @include boxStyle;
+
+        padding: 1%;
+        margin: 0 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >p {
+            margin: 1% 0;
+            text-align: justify;
+            line-height: 1.4;
+            font-size: 1.2rem;
+        }
+
+        >figure {
+            position: relative;
+        }
+
+        .content {
+            &__intro {
+                margin: 1% 0;
+                text-align: justify;
+                line-height: 1.4;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            &__header {
+                background-color: $mainColor;
+
+                >figure {
+                    position: relative;
+                }
+
+                .header {
+                    &__img {
+                        width: 100%;
+                    }
+
+                    &__title {
+                        font-family: font-punk-rock;
+                        font-size: 2.5rem;
+                        color: rgb(0, 0, 0);
+                        margin: 1%;
+                    }
+
+                    &__author {
+                        color: rgba(54, 54, 54);
+                        font-size: 0.9rem;
+                        font-family: sans-serif;
+                        margin: 1%;
+                    }
+                }
+            }
+
+            &__title {
+                font-family: kings-pirates;
+                font-size: 1.5rem;
+                width: 100%;
+                margin: 1% 0;
+            }
+
+            &__list {
+                width: 90%;
+                font-family: sans-serif;
+                line-height: 1.4;
+                text-align: justify;
+
+                >li {
+                    margin: 1.5% 0;
+                    font-size: 1.2rem;
+                }
+            }
+
+            &__img {
+                width: 100%;
+            }
+
+            &__img-copyright {
+                padding: 0.2%;
+                position: absolute;
+                right: 1%;
+                bottom: 2%;
+                font-size: 0.8rem;
+                background-color: rgba(172, 172, 172, 0.4);
+                font-family: Lato, sans-serif;
+                font-weight: 400;
+            }
+
+            &__grid-videos {
+                width: 90%;
+
+                .grid-videos {
+                    &__container-video {
+                        .container-video {
+                            &__video {
+                                width: 100%;
+                                padding-top: 56.25%;
+                                position: relative;
+                                overflow: hidden;
+                            }
+
+                            &__iframe-video {
+                                width: 100%;
+                                height: 100%;
+                                border: none;
+                                margin: 1%;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                            }
+
+                            &__description {
+                                .description {
+                                    &__title {
+                                        font-family: kings-pirates;
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &__letter {
+                width: 80%;
+
+                >p {
+                    text-shadow: 0 0 2px white;
+                    margin: 1% 0;
+                    line-height: 1.4;
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    &__recents-articles {
+        @include boxStyle;
+
+        height: fit-content;
+        padding: 1%;
+        margin: 3% 1%;
+        display: flex;
+        flex-direction: column;
+
+        .recents-articles {
+            &__input {
+                margin: 1% 0;
+                background-color: $mainColor;
+                position: relative;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &__img {
+                width: 100%;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            &__img-copyright {
+                padding: 0.2%;
+                position: absolute;
+                right: 1%;
+                bottom: 11%;
+                font-size: 0.8rem;
+                background-color: rgba(172, 172, 172, 0.4);
+                font-family: Lato, sans-serif;
+                font-weight: 400;
+            }
+
+            &__title {
+                font-family: font-punk-rock;
+                font-size: 2rem;
+                color: rgb(0, 0, 0);
+                margin: 1%;
+                position: relative;
+            }
+
+            &__blog-link {
+                font-family: kings-pirates;
+                font-size: 1rem;
+                text-decoration: none;
+                color: black;
+                margin: 1%;
+
+                &:hover {
+                    text-shadow: 0 0 5px white;
+                }
+            }
+
+            &__categories {
+                position: relative;
+
+                .categories {
+                    &__list {
+                        width: 100%;
+                        padding: 0;
+                        display: flex;
+                        list-style: none;
+                        justify-content: center;
+
+                        >li {
+                            margin: 2%;
+
+                            >a {
+                                font-family: font-punk-rock;
+                                font-size: 1.5rem;
+                                color: black;
+
+                                &:hover {
+                                    cursor: pointer;
+                                    text-shadow: 0 0 5px white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .detalle {
+        &__content {
+            width: 99%;
+
+            .content {
+                &__grid-videos {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &__recents-articles {
+            padding: 50px 1%;
+            flex-direction: row;
+            position: relative;
+
+            .recents-articles {
+                &__title {
+                    position: absolute;
+                    top: 0;
+                }
+
+                &__categories {
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    bottom: -15px;
+                    left: 0;
+
+                    .categories {
+                        &__list {
+                            width: 100vw;
+
+                            >li {
+                                >a {
+                                    font-size: 1.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .detalle {
+        &__content {
+            width: 60%;
+        }
+    }
+}

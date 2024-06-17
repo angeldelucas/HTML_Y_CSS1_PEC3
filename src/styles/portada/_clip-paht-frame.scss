@@ -1,0 +1,709 @@
+.portada {
+
+    &__presentation-image {
+        width: 100%;
+        height: 70dvh;
+        position: relative;
+        background-image: url("../assets/images/grupo_movil.jpeg");
+        background-size: 100% 100%;
+
+        .presentation-image {
+
+            &__shape {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                position: absolute;
+                transition: all 800ms ease-in-out;
+
+                .shape {
+                    &__img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &__singer-card {
+                width: 100%;
+                height: 70vh;
+                position: absolute;
+                left: -150%;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 800ms ease-in-out;
+                z-index: 20;
+
+                .singer-card {
+
+                    &__figure {
+                        width: 80%;
+                        height: 80%;
+                        border: 1px solid $mainColor;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        box-shadow: 0px 0px 20px white;
+                        transition: all 800ms ease-in-out;
+
+                        .figure {
+                            &__img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    &__img-copyright {
+                        padding: 0.2%;
+                        position: absolute;
+                        right: 1%;
+                        bottom: 1%;
+                        font-size: 0.8rem;
+                        background-color: rgba(172, 172, 172, 0.6);
+                        font-family: Lato, sans-serif;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        #one {
+            clip-path: polygon(49% 20%, 42% 24%, 43% 27%, 44% 34%, 43% 38%, 39% 41%, 35% 44%, 32% 49%, 31% 57%, 32% 61%, 37% 65%, 42% 68%, 43% 56%, 47% 53%, 52% 55%, 55% 60%, 56% 67%, 63% 64%, 68% 60%, 66% 50%, 63% 44%, 56% 41%, 55% 36%, 54% 30%, 56% 28%, 54% 24%);
+        }
+
+        #two {
+            clip-path: polygon(49% 1%, 45% 3%, 45% 8%, 44% 13%, 39% 19%, 36% 22%, 36% 25%, 42% 24%, 47% 21%, 51% 22%, 55% 25%, 61% 26%, 63% 23%, 60% 18%, 55% 15%, 53% 10%, 54% 5%, 52% 1%);
+        }
+
+        #three {
+            clip-path: polygon(26% 8%, 21% 13%, 23% 20%, 24% 27%, 30% 30%, 30% 36%, 35% 42%, 42% 40%, 43% 33%, 39% 26%, 34% 24%, 31% 21%, 32% 15%, 31% 10%);
+        }
+
+        #four {
+            clip-path: polygon(24% 26%, 20% 28%, 18% 32%, 18% 37%, 19% 42%, 18% 48%, 24% 50%, 28% 53%, 30% 54%, 32% 48%, 35% 45%, 33% 40%, 31% 35%, 30% 30%, 28% 28%);
+        }
+
+        #five {
+            clip-path: polygon(19% 49%, 13% 54%, 14% 60%, 17% 66%, 12% 72%, 9% 80%, 7% 86%, 7% 92%, 11% 94%, 11% 99%, 33% 98%, 32% 93%, 32% 86%, 33% 77%, 34% 71%, 34% 67%, 31% 63%, 27% 61%, 28% 57%, 27% 51%, 23% 49%);
+        }
+
+        #six {
+            clip-path: polygon(34% 98%, 33% 92%, 32% 87%, 33% 80%, 34% 74%, 39% 71%, 43% 70%, 43% 62%, 44% 55%, 52% 53%, 55% 61%, 57% 67%, 60% 71%, 61% 79%, 61% 89%, 57% 95%, 58% 99%);
+        }
+
+        #seven {
+            clip-path: polygon(73% 7%, 68% 10%, 68% 16%, 69% 21%, 64% 23%, 61% 26%, 60% 32%, 66% 32%, 68% 28%, 72% 27%, 76% 28%, 79% 31%, 80% 34%, 85% 34%, 88% 34%, 86% 29%, 83% 24%, 82% 21%, 77% 20%, 77% 16%, 78% 13%, 77% 9%);
+        }
+
+        #eight {
+            clip-path: polygon(71% 26%, 78% 28%, 81% 33%, 85% 36%, 89% 43%, 92% 49%, 90% 54%, 84% 56%, 78% 56%, 73% 55%, 70% 58%, 66% 58%, 66% 49%, 65% 44%, 68% 38%, 68% 34%, 68% 30%);
+        }
+
+        #nine {
+            clip-path: polygon(62% 97%, 62% 89%, 63% 81%, 65% 74%, 67% 65%, 70% 57%, 75% 55%, 79% 57%, 83% 63%, 85% 67%, 86% 74%, 87% 80%, 88% 85%, 88% 91%, 88% 95%, 89% 99%);
+        }
+
+        #ten {
+            visibility: hidden;
+            z-index: -1;
+        }
+
+        #eleven {
+            visibility: hidden;
+            z-index: -1;
+        }
+    }
+
+    &__section {
+        @include boxStyle;
+
+        padding-top: 1%;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+
+        .section {
+            &__title {
+                font-family: font-rock;
+                text-decoration: none;
+                color: black;
+            }
+
+            &__intro {
+                margin: 1%;
+            }
+        }
+
+        &:nth-child(n+2) {
+            visibility: visible;
+            position: relative;
+            bottom: 0;
+        }
+
+        &:nth-child(2) {
+            visibility: hidden;
+            position: absolute;
+            bottom: 100%;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img-copyright {
+        padding: 0.2%;
+        position: absolute;
+        right: 1%;
+        bottom: 2%;
+        font-size: 0.8rem;
+        background-color: rgba(172, 172, 172, 0.4);
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        >figure {
+            width: 100%;
+        }
+
+        .main {
+            &__title {
+                position: absolute;
+                bottom: 40px;
+                z-index: 10;
+                color: white;
+                font-family: font-punk-rock;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+
+                    &:hover {
+                        box-shadow: 0 0 20px white;
+                    }
+                }
+            }
+
+            &__group-pages {
+                width: 30%;
+                padding: 0.5%;
+                display: flex;
+                position: absolute;
+                bottom: 20px;
+                z-index: 20;
+                justify-content: space-between;
+                background-color: rgba(172, 172, 172, 0.8);
+                border-radius: 10px;
+
+                .group-pages {
+                    &__icon {
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid black;
+                        border-radius: 7.5;
+                        margin: 0 2%;
+                        transition: all 700ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .portada {
+
+        &__presentation-image {
+            height: 100vh;
+            background-image: inherit;
+
+            .presentation-image {
+
+                &__singer-card {
+                    height: 100vh;
+
+                    .singer-card {
+
+                        &__figure {
+                            width: 30%;
+                            height: 60%;
+                            transform: translate(0%, -50%);
+                            box-shadow: 0px 0px 100px white;
+                        }
+                    }
+                }
+            }
+
+            #one {
+                clip-path: polygon(0% 0%,
+                        /*1*/
+                        30% 0%,
+                        /*2*/
+                        30% 20%,
+                        /*3*/
+                        25% 25%,
+                        /*4*/
+                        15% 30%,
+                        /*5*/
+                        15% 45%,
+                        /*6*/
+                        0% 45%,
+                        /*7*/
+                        0% 0%);
+            }
+
+            #two {
+                clip-path: polygon(0% 45%,
+                        /*1*/
+                        15% 45%,
+                        /*2*/
+                        15% 30%,
+                        /*3*/
+                        25% 25%,
+                        /*4*/
+                        25% 35%,
+                        /*5*/
+                        30% 60%,
+                        /*6*/
+                        20% 100%,
+                        /*7*/
+                        0% 100%,
+                        /*8*/
+                        0% 45%);
+                /*9*/
+            }
+
+            #three {
+                clip-path: polygon(30% 0%,
+                        /*1*/
+                        40% 0%,
+                        /*2*/
+                        40% 40%,
+                        /*3*/
+                        30% 60%,
+                        /*4*/
+                        25% 35%,
+                        /*5*/
+                        25% 25%,
+                        /*6*/
+                        30% 20%,
+                        /*7*/
+                        30% 0%);
+                /*8*/
+            }
+
+            #four {
+                clip-path: polygon(30% 60%,
+                        /*1*/
+                        40% 40%,
+                        /*2*/
+                        50% 40%,
+                        /*3*/
+                        50% 100%,
+                        /*4*/
+                        20% 100%,
+                        /*5*/
+                        30% 60%);
+                /*6*/
+            }
+
+            #five {
+                clip-path: polygon(40% 0%,
+                        /*1*/
+                        55% 0%,
+                        /*2*/
+                        55% 50%,
+                        /*3*/
+                        50% 50%,
+                        /*4*/
+                        50% 40%,
+                        /*5*/
+                        40% 40%,
+                        /*6*/
+                        40% 50%,
+                        /*7*/
+                        40% 0%);
+                /*8*/
+            }
+
+            #six {
+                clip-path: polygon(50% 50%,
+                        /*1*/
+                        55% 50%,
+                        /*2*/
+                        70% 60%,
+                        /*3*/
+                        70% 100%,
+                        /*4*/
+                        50% 100%,
+                        /*5*/
+                        50% 50%);
+                /*6*/
+            }
+
+            #seven {
+                clip-path: polygon(55% 0%,
+                        /*1*/
+                        65% 0%,
+                        /*2*/
+                        70% 60%,
+                        /*3*/
+                        55% 50%,
+                        /*4*/
+                        55% 0%);
+                /*5*/
+            }
+
+            #eight {
+                clip-path: polygon(65% 0%,
+                        /*1*/
+                        75% 0%,
+                        /*2*/
+                        75% 50%,
+                        /*3*/
+                        70% 60%,
+                        /*4*/
+                        65% 0%);
+                /*5*/
+            }
+
+            #nine {
+                clip-path: polygon(75% 0%,
+                        /*1*/
+                        100% 0%,
+                        /*2*/
+                        100% 100%,
+                        /*3*/
+                        70% 100%,
+                        /*4*/
+                        70% 60%,
+                        /*5*/
+                        75% 50%,
+                        /*6*/
+                        75% 0%);
+                /*7*/
+            }
+
+            #ten {
+                visibility: visible;
+                z-index: -1;
+                clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+            }
+
+            #eleven {
+                visibility: visible;
+                z-index: -1;
+                clip-path: polygon(55% 0%, 100% 0%, 100% 100%, 45% 100%);
+            }
+        }
+
+        &__section {
+            width: 80%;
+            height: fill-available;
+            border: inherit;
+            margin: 0;
+            background-color: inherit;
+            box-shadow: inherit;
+            z-index: 10;
+
+            &:nth-child(n+2) {
+                visibility: hidden;
+                position: absolute;
+                bottom: 150%;
+                z-index: 10;
+            }
+
+            &:nth-child(2) {
+                visibility: visible;
+                position: relative;
+                bottom: 0;
+            }
+        }
+
+        &__main {
+            @include boxStyle;
+
+            width: 90%;
+            height: 95%;
+
+            .main {
+                &__title {
+                    top: 75%;
+                    z-index: 10;
+                    text-transform: inherit;
+
+                    a {
+                        font-size: 2.1rem;
+                    }
+                }
+
+                &__group-pages {
+                    width: 10%;
+                    height: fit-content;
+                    top: 85%;
+                    visibility: visible;
+                    z-index: 20;
+
+                    .group-pages {
+                        &__icon {
+                            width: 15px;
+                            height: 15px;
+                            border: 2px solid black;
+                            border-radius: 7.5;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: black;
+                                box-shadow: 0 0 15px black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .portada {
+
+        &__presentation-image {
+
+            .presentation-image {
+
+                &__shape {
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+.footer:hover {
+    +.portada {
+        .portada {
+            &__image {
+                mask-image: linear-gradient(to top, transparent -300%, rgb(255, 255, 255) 95%);
+            }
+        }
+    }
+}
+
+.portada__presentation-image:has(.presentation-image__shape:hover)>.presentation-image__shape {
+    filter: brightness(140%);
+    cursor: pointer;
+}
+
+.portada__presentation-image:has(.presentation-image__shape:hover)>.presentation-image__shape:not(:hover) {
+    opacity: 0.8;
+    filter: grayscale(50%);
+    filter: brightness(50%);
+}
+
+.not-hover-state {
+    opacity: 0.8 !important;
+    filter: grayscale(50%) !important;
+    filter: brightness(50%) !important;
+}
+
+.translate-center {
+    transform: translateX(0%);
+}
+
+.presentation-image__singer-card {
+    background-size: 300%;
+    background-image: linear-gradient(45deg, rgba(202, 202, 202, 0.6), rgba(163, 163, 163, 0.6), rgba(80, 80, 80, 0.6), rgba(0, 0, 0, 0.6));
+    animation: bg-animation 10s infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+.small-polygon-one {
+    @include clip-path-animation(shape-one-animation);
+}
+
+.small-polygon-two {
+    @include clip-path-animation(shape-two-animation);
+}
+
+.small-polygon-three {
+    @include clip-path-animation(shape-three-animation);
+}
+
+.small-polygon-four {
+    @include clip-path-animation(shape-four-animation);
+}
+
+.small-polygon-five {
+    @include clip-path-animation(shape-five-animation);
+}
+
+.small-polygon-six {
+    @include clip-path-animation(shape-six-animation);
+}
+
+.small-polygon-seven {
+    @include clip-path-animation(shape-seven-animation);
+}
+
+.small-polygon-eight {
+    @include clip-path-animation(shape-eight-animation);
+}
+
+.small-polygon-nine {
+    @include clip-path-animation(shape-nine-animation);
+}
+
+@keyframes shape-one-animation {
+    from {
+        top: 2%;
+        left: 20%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: 24%;
+        left: -5%;
+        clip-path: polygon(20% 2%, 15% 12%, 20% 22%, 25% 12%);
+    }
+}
+
+@keyframes shape-two-animation {
+    from {
+        top: 26%;
+        left: 20%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: 12%;
+        left: -11%;
+        clip-path: polygon(20% 26%, 15% 36%, 20% 46%, 25% 36%);
+    }
+}
+
+@keyframes shape-three-animation {
+    from {
+        top: 6%;
+        left: 35%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: 20%;
+        left: -8%;
+        clip-path: polygon(35% 6%, 30% 16%, 35% 26%, 40% 16%);
+
+    }
+}
+
+@keyframes shape-four-animation {
+    from {
+        top: 36%;
+        left: 42%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: 2%;
+        left: -21%;
+        clip-path: polygon(42% 36%, 37% 46%, 42% 56%, 47% 46%);
+    }
+}
+
+@keyframes shape-five-animation {
+    from {
+        top: 6%;
+        left: 48%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: 56%;
+        left: -27%;
+        clip-path: polygon(48% 6%, 43% 16%, 48% 26%, 53% 16%);
+    }
+}
+
+@keyframes shape-six-animation {
+    from {
+        top: 52%;
+        left: 61%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: -2%;
+        left: -34%;
+        clip-path: polygon(61% 52%, 56% 62%, 61% 72%, 66% 62%);
+    }
+}
+
+@keyframes shape-seven-animation {
+    from {
+        top: 6%;
+        left: 61%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: 44%;
+        left: -46%;
+        clip-path: polygon(61% 6%, 56% 16%, 61% 26%, 66% 16%);
+    }
+}
+
+@keyframes shape-eight-animation {
+    from {
+        top: 6%;
+        left: 71%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: 8%;
+        left: -50%;
+        clip-path: polygon(71% 6%, 66% 16%, 71% 26%, 76% 16%);
+    }
+}
+
+@keyframes shape-nine-animation {
+    from {
+        top: 0%;
+        left: 81%;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    to {
+        top: 38%;
+        left: -48%;
+        clip-path: polygon(81% 0%, 76% 10%, 81% 20%, 86% 10%);
+    }
+}

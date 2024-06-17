@@ -1,0 +1,39 @@
+{
+  "name": "pec1",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npm-run-all clean  parcel:serve",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:serve": "parcel src/index.html -p 1234 --no-source-maps --no-cache",
+    "parcel:dev": "npm-run-all clean  parcel:serve",
+    "parcel:build": "parcel build src/index.html --no-source-maps --no-cache  --public-url ./",
+    "clean": "rimraf dist .parcel-cache",
+    "stylelint": "stylelint src/**/*.scss",
+    "stylelint_fix": "stylelint src/**/*.scss --fix"
+  },
+  "browserslist": [
+    ">5%",
+    "dead",
+    "op_mini all",
+    "last 2 version",
+    "last 2 chrome version",
+    "last 2 firefox version",
+    "last 2 safari version"
+  ],
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "browserslist": "^4.23.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "latest",
+    "postcss-lit": "^1.1.1",
+    "posthtml-include": "^2.0.1",
+    "rimraf": "^5.0.5",
+    "sharp": "^0.31.3",
+    "stylelint": "^16.3.1",
+    "stylelint-config-clean-order": "^5.4.2",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-sass-guidelines": "^11.1.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}

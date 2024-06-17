@@ -1,0 +1,77 @@
+$mainColor: rgb(172, 172, 172);
+
+@font-face {
+    font-family: 'font-rock';
+    /*a name to be used later*/
+    src: url('../assets/font/rock/Serialpublicationdemo-qxo1.ttf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'font-punk-rock';
+    /*a name to be used later*/
+    src: url('../assets/font/punk-rock/PunkrockshowRegular-xP4m.ttf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'kings-pirates';
+    /*a name to be used later*/
+    src: url('../assets/font/kings/KingsAndPirates-p7EAK.ttf');
+    /*URL to font*/
+}
+
+.hide {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.opaciticy-off {
+    opacity: 0;
+}
+
+.opaciticy-on {
+    opacity: 1;
+}
+
+.show {
+    visibility: visible;
+    position: relative;
+    bottom: inherit;
+}
+
+.active {
+    background-color: black;
+    transition: all 700ms;
+}
+
+.selected {
+    background-color: rgb(172, 172, 172, 0.7);
+}
+
+.icon-active {
+    background-color: $mainColor;
+    transition: all 700ms;
+}
+
+.menu-active {
+    text-decoration: underline !important;
+    text-underline-offset: 10px;
+    color: white;
+    background: radial-gradient($mainColor, transparent 75%);
+}
+
+@mixin boxStyle {
+    background-color: rgb(172, 172, 172, 0.7);
+    border: 1px solid rgb(172, 172, 172, 0.7);
+    box-shadow: 0 0 8px $mainColor;
+}
+
+@mixin clip-path-animation($name) {
+    animation-name: $name;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    z-index: 200;
+}

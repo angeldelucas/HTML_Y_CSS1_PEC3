@@ -1,0 +1,291 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100%;
+    visibility: hidden;
+    font-family: system-ui;
+    font-size: 0.8rem;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+
+    &__menu {
+
+        .menu {
+
+            &__options-menu {
+                width: 100%;
+                padding: 1% 0 0 0;
+                display: flex;
+                flex-direction: row;
+                text-transform: uppercase;
+                list-style: none;
+                align-items: center;
+
+                .options-menu {
+                    &__elto {
+                        height: fit-content;
+                        padding: 7px;
+
+                        .elto {
+                            &__link {
+                                text-decoration: none;
+                                color: $mainColor;
+                                font-family: font-punk-rock;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                    text-underline-offset: 10px;
+                                    color: white;
+                                    background: radial-gradient($mainColor, transparent 75%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__copyright-container {
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 100px;
+        height: 100px;
+        padding: 2%;
+    }
+
+    &__copyright {
+        color: $mainColor;
+        width: max-content;
+    }
+
+    &__links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__rrss-menu {
+        width: max-content;
+        padding: 2% 8%;
+        display: flex;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        background: radial-gradient($mainColor, transparent 75%);
+        list-style: none;
+
+        .rrss-menu {
+            &__rrss-elto {
+                padding: 0 1%;
+
+                .rrss-elto {
+                    &__logo {
+                        width: 30px;
+                        height: 30px;
+
+                        &:hover {
+                            background: radial-gradient(rgb(255, 255, 255), transparent 60%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__legal-menu {
+        width: 100%;
+        padding: 1%;
+
+        .legal-menu {
+            &__elto {
+                list-style: none;
+                padding: 1%;
+                display: flex;
+                justify-content: center;
+
+
+                .elto {
+                    &__legal-link {
+                        text-decoration: none;
+                        color: $mainColor;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+    .footer {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        bottom: 0;
+
+        &__menu {
+
+            .menu {
+
+                &__options-menu {
+
+                    .options-menu {
+
+                        &__elto {
+
+                            .elto {
+
+                                &__link {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    #footer__info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        font-size: 0.8rem;
+        opacity: 1;
+        visibility: visible;
+        z-index: 100;
+        transition: all 500ms;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 0%;
+        background-color: black;
+        align-items: center;
+        font-size: 0.8rem;
+        opacity: 1;
+        visibility: visible;
+        z-index: 100;
+        transition: all 500ms;
+
+        &:hover {
+            opacity: 1 !important;
+        }
+
+        &__container-logo {
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+        }
+
+        &__logo {
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+        }
+
+        &__copyright-container {
+            padding: 0.5%;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+
+        &__copyright {
+            width: max-content;
+            padding-left: 5%;
+            color: $mainColor;
+        }
+
+        &__links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__rrss-menu {
+            width: max-content;
+            padding: 0% 1%;
+            display: flex;
+            background: inherit;
+            list-style: none;
+            visibility: inherit;
+            opacity: inherit;
+            right: 50%;
+            translate: 50% 0%;
+
+            .rrss-menu {
+                &__rrss-elto {
+                    padding: 0 1%;
+
+                    .rrss-elto {
+                        &__logo {
+                            width: 25px;
+                            height: 25px;
+                            box-shadow: 2px 2px 5px rgb(255, 0, 0);
+                            background: rgba(172, 172, 172, 0.7);
+                            transition: all 200ms;
+
+                            &:hover {
+                                background: rgba(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__legal-menu {
+            width: fit-content;
+            padding: 0.7%;
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+
+            .legal-menu {
+                &__elto {
+                    list-style: none;
+                    padding: 0 1%;
+
+
+                    .elto {
+                        &__legal-link {
+                            text-decoration: none;
+                            color: $mainColor;
+
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
