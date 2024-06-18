@@ -193,7 +193,7 @@ function nextPresentationMenuAutomatic(currentElto) {
     articles[currentElto].className = "info__block";
     iconsMenu[currentElto].className = "menu__icon icon-active";
 }
-
+ 
 // Temporizadores que controlan el cambio de elemento en los menús 
 // automáticos en las vistas de presentación y portada
 // setInterval(function () {
