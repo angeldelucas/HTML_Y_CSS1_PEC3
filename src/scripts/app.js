@@ -196,35 +196,35 @@ function nextPresentationMenuAutomatic(currentElto) {
 
 // Temporizadores que controlan el cambio de elemento en los menús 
 // automáticos en las vistas de presentación y portada
-setInterval(function () {
-    nextPresentationMenuAutomatic(currentOption);
-    if (currentOption < 7) {
-        currentOption++;
-    }
-    else {
-        currentOption = 0;
-    }
-}, 5000);
+// setInterval(function () {
+//     nextPresentationMenuAutomatic(currentOption);
+//     if (currentOption < 7) {
+//         currentOption++;
+//     }
+//     else {
+//         currentOption = 0;
+//     }
+// }, 5000);
 
-setInterval(function () {
-    nextAutomatic("presentation-section", currentCategory);
-    if (currentCategory < 2) {
-        currentCategory++;
-    }
-    else {
-        currentCategory = 0;
-    }
-}, 5000);
+// setInterval(function () {
+//     nextAutomatic("presentation-section", currentCategory);
+//     if (currentCategory < 2) {
+//         currentCategory++;
+//     }
+//     else {
+//         currentCategory = 0;
+//     }
+// }, 5000);
 
-setInterval(function () {
-    nextAutomatic("news-section", currentNew);
-    if (currentNew < 3) {
-        currentNew++;
-    }
-    else {
-        currentNew = 0;
-    }
-}, 5000);
+// setInterval(function () {
+//     nextAutomatic("news-section", currentNew);
+//     if (currentNew < 3) {
+//         currentNew++;
+//     }
+//     else {
+//         currentNew = 0;
+//     }
+// }, 5000);
 
 // Función para marcar como seleccionado el elemento del header menu correspondiente
 function headerMenuOption(event) {
