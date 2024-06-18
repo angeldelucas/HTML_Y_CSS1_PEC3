@@ -4,7 +4,7 @@
         width: 100%;
         height: 70dvh;
         position: relative;
-        background-image: url("../assets/images/grupo_movil.jpeg");
+        background-image: url("../assets/images/grupo_movil.webp");
         background-size: 100% 100%;
 
         .presentation-image {
@@ -118,41 +118,6 @@
         }
     }
 
-    &__section {
-        @include boxStyle;
-
-        padding-top: 1%;
-        margin: 2%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: black;
-
-        .section {
-            &__title {
-                font-family: font-rock;
-                text-decoration: none;
-                color: black;
-            }
-
-            &__intro {
-                margin: 1%;
-            }
-        }
-
-        &:nth-child(n+2) {
-            visibility: visible;
-            position: relative;
-            bottom: 0;
-        }
-
-        &:nth-child(2) {
-            visibility: hidden;
-            position: absolute;
-            bottom: 100%;
-        }
-    }
-
     &__image {
         width: 100%;
         height: 100%;
@@ -167,61 +132,6 @@
         background-color: rgba(172, 172, 172, 0.4);
         font-family: Lato, sans-serif;
         font-weight: 400;
-    }
-
-    &__main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-
-        >figure {
-            width: 100%;
-        }
-
-        .main {
-            &__title {
-                position: absolute;
-                bottom: 40px;
-                z-index: 10;
-                color: white;
-                font-family: font-punk-rock;
-
-                a {
-                    color: white;
-                    text-decoration: none;
-                    font-weight: 400;
-                    font-size: 1.5rem;
-
-                    &:hover {
-                        box-shadow: 0 0 20px white;
-                    }
-                }
-            }
-
-            &__group-pages {
-                width: 30%;
-                padding: 0.5%;
-                display: flex;
-                position: absolute;
-                bottom: 20px;
-                z-index: 20;
-                justify-content: space-between;
-                background-color: rgba(172, 172, 172, 0.8);
-                border-radius: 10px;
-
-                .group-pages {
-                    &__icon {
-                        width: 10px;
-                        height: 10px;
-                        border: 1px solid black;
-                        border-radius: 7.5;
-                        margin: 0 2%;
-                        transition: all 700ms;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -409,71 +319,6 @@
                 visibility: visible;
                 z-index: -1;
                 clip-path: polygon(55% 0%, 100% 0%, 100% 100%, 45% 100%);
-            }
-        }
-
-        &__section {
-            width: 80%;
-            height: fill-available;
-            border: inherit;
-            margin: 0;
-            background-color: inherit;
-            box-shadow: inherit;
-            z-index: 10;
-
-            &:nth-child(n+2) {
-                visibility: hidden;
-                position: absolute;
-                bottom: 150%;
-                z-index: 10;
-            }
-
-            &:nth-child(2) {
-                visibility: visible;
-                position: relative;
-                bottom: 0;
-            }
-        }
-
-        &__main {
-            @include boxStyle;
-
-            width: 90%;
-            height: 95%;
-
-            .main {
-                &__title {
-                    top: 75%;
-                    z-index: 10;
-                    text-transform: inherit;
-
-                    a {
-                        font-size: 2.1rem;
-                    }
-                }
-
-                &__group-pages {
-                    width: 10%;
-                    height: fit-content;
-                    top: 85%;
-                    visibility: visible;
-                    z-index: 20;
-
-                    .group-pages {
-                        &__icon {
-                            width: 15px;
-                            height: 15px;
-                            border: 2px solid black;
-                            border-radius: 7.5;
-
-                            &:hover {
-                                cursor: pointer;
-                                background-color: black;
-                                box-shadow: 0 0 15px black;
-                            }
-                        }
-                    }
-                }
             }
         }
     }
