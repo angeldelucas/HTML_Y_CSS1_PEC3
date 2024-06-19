@@ -1,11 +1,11 @@
 {
     "jpeg": {
-        "quality": 75
+        "quality": 100
     },
     "webp": {
-        "quality": 75
+        "quality": 100
     },
     "png": {
-        "quality": 75
+        "quality": 100
     }
 }
