@@ -2,6 +2,7 @@ $mainColor: rgb(172, 172, 172);
 
 @font-face {
     font-family: 'font-rock';
+    font-display: swap;
     /*a name to be used later*/
     src: url('../assets/font/rock/Serialpublicationdemo-qxo1.ttf');
     /*URL to font*/
@@ -9,6 +10,7 @@ $mainColor: rgb(172, 172, 172);
 
 @font-face {
     font-family: 'font-punk-rock';
+    font-display: swap;
     /*a name to be used later*/
     src: url('../assets/font/punk-rock/PunkrockshowRegular-xP4m.ttf');
     /*URL to font*/
@@ -16,6 +18,7 @@ $mainColor: rgb(172, 172, 172);
 
 @font-face {
     font-family: 'kings-pirates';
+    font-display: swap;
     /*a name to be used later*/
     src: url('../assets/font/kings/KingsAndPirates-p7EAK.ttf');
     /*URL to font*/
