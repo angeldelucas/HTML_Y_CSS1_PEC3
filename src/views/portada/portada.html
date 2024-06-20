@@ -1,55 +1,86 @@
 <include src="./views/portada/clip-path-frame.html"></include>
+
 <main id="portada" class="portada">
+
+
     <section id="presentation-section" class="portada__section">
         <div class="portada__main">
             <h1 class="main__title"><a href="./categoria.html">ultimas noticias</a></h1>
             <figure>
-                <img class="portada__image" loading="lazy" src="./assets/images/Mago_de_Oz.jpg?as=webp&width=900"
-                    alt="seccion noticias">
-                <img class="portada__image hide" loading="lazy" src="./assets/images/grupo.jpg?as=webp&width=900"
-                    alt="seccion grupo">
-                <img class="portada__image hide" loading="lazy" src="./assets/images/concierto.jpg?as=webp&width=900"
-                    alt="seccion conciertos">
+                <img class="portada__image" loading="lazy" src="./assets/images/Mago_de_Oz.jpg?as=webp" width="900" height="500" alt="seccion noticias">
+                <img class="portada__image hide" loading="lazy" src="./assets/images/grupo.jpg?as=webp" width="900" height="500" alt="seccion grupo">
+                <img class="portada__image hide" loading="lazy" src="./assets/images/concierto.jpg?as=webp" width="900" height="500" alt="seccion conciertos">
                 <figcaption class="portada__img-copyright">© Mägo de Oz, Oficial</figcaption>
             </figure>
             <div class="main__group-pages">
-                <h1><a class="section__title" href="./categoria.html">últimas noticias</a></h1>
-                <h1 class="main__title"><a href="./detalle.html">Zeta no continua con la banda</a></h1>
-            
-                <figure>
-                    <img class="portada__image" loading="lazy" src="./assets/images/recaida_zeta.png?as=webp&width=992"
-                        alt="Noticia zeta deja el grupo">
-                    <img class="portada__image hide" loading="lazy" src="./assets/images/entrevista_40_prin.png?as=webp&width=992"
-                        alt="Entrevista 40 principales">
-                    <img class="portada__image hide" loading="lazy" src="./assets/images/gira.jpeg?as=webp&width=992"
-                        alt="Noticia gira 2024">
-                    <img class="portada__image hide" loading="lazy" src="./assets/images/mago_oz_veracruz.jpeg?as=webp&width=992"
-                        alt="Noticia presentación en Veracruz">
-                    <figcaption class="portada__img-copyright">© Mägo de Oz, Oficial</figcaption>
-                </figure>
-                <h1><a class="section__title" href="">conoce mago de oz</a></h1>
-                <div class="portada__main">
-                    <h1 class="main__title"><a href="">la historia de una leyenda</a></h1>
-                    <figure>
-                        <img class="portada__image" loading="lazy" src="./assets/images/grupo.jpg?as=webp&width=992"
-                            alt="Historia del grupo">
-                        <figcaption class="portada__img-copyright">© Mägo de Oz, Oficial</figcaption>
-                    </figure>
-                    <div class="main__group-pages">
-                        <h1><a class="section__title" href="">próximos conciertos</a></h1>
-                        <div class="portada__main">
-                            <h1 class="main__title"><a href="">madrid</a></h1>
-                            <figure>
-                                <img class="portada__image" loading="lazy" src="./assets/images/concierto.jpg?as=webp&width=992"
-                                    alt="Concierto de Madrid">
-                                <figcaption class="portada__img-copyright">© Mägo de Oz, Oficial</figcaption>
-                            </figure>
-                            <div class="main__group-pages">
-                                <div id="events-nav-btn-0" class="group-pages__icon"><a href="#"></a></div>
-                                <div id="events-nav-btn-1" class="group-pages__icon"><a href="#"></a></div>
-                                <div id="events-nav-btn-2" class="group-pages__icon"><a href="#"></a></div>
-                                <div id="events-nav-btn-3" class="group-pages__icon"><a href="#"></a></div>
-                            </div>
-                        </div>
+                <div id="presentation-nav-btn-0" class="group-pages__icon active"></div>
+                <div id="presentation-nav-btn-1" class="group-pages__icon"></div>
+                <div id="presentation-nav-btn-2" class="group-pages__icon"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news-section" class="portada__section">
+        <h1><a class="section__title" href="./categoria.html">últimas noticias</a></h1>
+        <p class="section__intro">después de meses luchando Zeta ha decidido no continuar aunque deja la puerta abierta
+        </p>
+        <div class="portada__main">
+            <h1 class="main__title"><a href="./detalle.html">Zeta no continua con la banda</a></h1>
+
+            <figure>
+                <img class="portada__image" loading="lazy" src="./assets/images/recaida_zeta.png?as=webp" width="460" height="260" alt="Noticia zeta deja el grupo">
+                <img class="portada__image hide" loading="lazy" src="./assets/images/entrevista_40_prin.png?as=webp" width="460" height="260"
+                    alt="Entrevista 40 principales">
+                <img class="portada__image hide" loading="lazy" src="./assets/images/gira.jpeg?as=webp" width="460" height="260" alt="Noticia gira 2024">
+                <img class="portada__image hide" loading="lazy" src="./assets/images/mago_oz_veracruz.jpeg?as=webp" width="460" height="260"
+                    alt="Noticia presentación en Veracruz">
+                <figcaption class="portada__img-copyright">© Mägo de Oz, Oficial</figcaption>
+            </figure>
+            <div class="main__group-pages">
+                <div id="news-nav-btn-0" class="group-pages__icon active"><a href="#"></a></div>
+                <div id="news-nav-btn-1" class="group-pages__icon"><a href="#"></a></div>
+                <div id="news-nav-btn-2" class="group-pages__icon"><a href="#"></a></div>
+                <div id="news-nav-btn-3" class="group-pages__icon"><a href="#"></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="group-section" class="portada__section">
+        <h1><a class="section__title" href="">conoce mago de oz</a></h1>
+        <p class="section__intro">Conoce un poco más a cada uno de los integrantes del grupo en la actualidad sin
+            olvidar los que ya no están
+            y
+            ayudaron a forjar esta leyenda viva</p>
+        <div class="portada__main">
+            <h1 class="main__title"><a href="">la historia de una leyenda</a></h1>
+            <figure>
+                <img class="portada__image" loading="lazy" src="./assets/images/grupo.jpg?as=webp" width="460" height="260" alt="Historia del grupo">
+                <figcaption class="portada__img-copyright">© Mägo de Oz, Oficial</figcaption>
+            </figure>
+            <div class="main__group-pages">
+                <div id="group-nav-btn-0" class="group-pages__icon"><a href="#"></a></div>
+                <div id="group-nav-btn-1" class="group-pages__icon"><a href="#"></a></div>
+                <div id="group-nav-btn-2" class="group-pages__icon"><a href="#"></a></div>
+                <div id="group-nav-btn-3" class="group-pages__icon"><a href="#"></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events-section" class="portada__section">
+        <h1><a class="section__title" href="">próximos conciertos</a></h1>
+        <p class="section__intro">Consulta las fechas de nuestros próximos conciertos</p>
+        <div class="portada__main">
+            <h1 class="main__title"><a href="">madrid</a></h1>
+            <figure>
+                <img class="portada__image" loading="lazy" src="./assets/images/concierto.jpg?as=webp" width="460" height="260" alt="Concierto de Madrid">
+                <figcaption class="portada__img-copyright">© Mägo de Oz, Oficial</figcaption>
+            </figure>
+            <div class="main__group-pages">
+                <div id="events-nav-btn-0" class="group-pages__icon"><a href="#"></a></div>
+                <div id="events-nav-btn-1" class="group-pages__icon"><a href="#"></a></div>
+                <div id="events-nav-btn-2" class="group-pages__icon"><a href="#"></a></div>
+                <div id="events-nav-btn-3" class="group-pages__icon"><a href="#"></a></div>
+            </div>
+        </div>
     </section>
 </main>
