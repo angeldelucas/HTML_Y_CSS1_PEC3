@@ -1,5 +1,6 @@
 .detalle {
     font-family: 'Lato', sans-serif;
+    font-display: swap;
     font-weight: 400;
     background-image: url("../assets/images/fondo_portada.jpeg");
     padding: 2%;
@@ -83,6 +84,7 @@
 
                     &__title {
                         font-family: font-punk-rock;
+                        font-display: swap;
                         font-size: 2.5rem;
                         color: rgb(0, 0, 0);
                         margin: 1%;
@@ -92,6 +94,7 @@
                         color: rgba(54, 54, 54);
                         font-size: 0.9rem;
                         font-family: sans-serif;
+                        font-display: swap;
                         margin: 1%;
                     }
                 }
@@ -99,6 +102,7 @@
 
             &__title {
                 font-family: kings-pirates;
+                font-display: swap;
                 font-size: 1.5rem;
                 width: 100%;
                 margin: 1% 0;
@@ -107,6 +111,7 @@
             &__list {
                 width: 90%;
                 font-family: sans-serif;
+                font-display: swap;
                 line-height: 1.4;
                 text-align: justify;
 
@@ -129,6 +134,7 @@
                 background-color: rgba(172, 172, 172, 0.4);
                 font-family: Lato, sans-serif;
                 font-weight: 400;
+                font-display: swap;
             }
 
             &__grid-videos {
@@ -160,6 +166,7 @@
                                 .description {
                                     &__title {
                                         font-family: kings-pirates;
+                                        font-display: swap;
                                         font-size: 1rem;
                                     }
                                 }
@@ -221,11 +228,13 @@
                 font-size: 0.8rem;
                 background-color: rgba(172, 172, 172, 0.4);
                 font-family: Lato, sans-serif;
+                font-display: swap;
                 font-weight: 400;
             }
 
             &__title {
                 font-family: font-punk-rock;
+                font-display: swap;
                 font-size: 2rem;
                 color: rgb(0, 0, 0);
                 margin: 1%;
@@ -234,6 +243,7 @@
 
             &__blog-link {
                 font-family: kings-pirates;
+                font-display: swap;
                 font-size: 1rem;
                 text-decoration: none;
                 color: black;
@@ -260,6 +270,7 @@
 
                             >a {
                                 font-family: font-punk-rock;
+                                font-display: swap;
                                 font-size: 1.5rem;
                                 color: black;
 
