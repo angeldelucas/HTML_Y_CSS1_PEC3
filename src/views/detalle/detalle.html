@@ -21,7 +21,8 @@
                         srcset="./assets/images/zet_detalle_768-.jpg?as=webp">
                     <source class="header__img" media="(min-width: 1400px)"
                         srcset="./assets/images/zet_detalle.jpg?as=webp">
-                    <img class="header__img" loading="lazy" src="./assets/images/zet_detalle.jpg?as=webp" width="400" height="400" alt="Zeta de Mago de Oz">
+                    <img class="header__img" loading="lazy" src="./assets/images/zet_detalle.jpg?as=webp" width="400"
+                        height="400" alt="Zeta de Mago de Oz">
                 </picture>
                 <figcaption class="content__img-copyright">© Mägo de Oz, Oficial</figcaption>
             </figure>
@@ -46,8 +47,9 @@
                 <img class="content__img" fetchpriority="high" loading="lazy" srcset="./assets/images/foto-todos-scaled_small.jpg?as=webp 768w,
                             ./assets/images/foto-todos-scaled_medium.jpg?as=webp 992w,
                             ./assets/images/foto-todos-scaled_large.jpg?as=webp 1399w"
-                    sizes="(max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1399px) 1399px" src="./assets/images/foto-todos-scaled_large.jpg?as=webp"
-                    alt="Grupo de Mago de Oz al completo" width="400" height="400">
+                    sizes="(max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1399px) 1399px"
+                    src="./assets/images/foto-todos-scaled_large.jpg?as=webp" alt="Grupo de Mago de Oz al completo"
+                    width="400" height="400">
             </picture>
             <figcaption class="content__img-copyright">© Mägo de Oz, Oficial</figcaption>
         </figure>
@@ -111,6 +113,17 @@
         </ol>
 
 
+
+        <script>
+            const observer = new PerformanceObserver((list) => {
+                for (const entry of list.getEntries()) {
+                    // Attribution entry including "containerSrc":"https://example.com"
+                    console.log(JSON.stringify(entry.attribution));
+                }
+            });
+
+            observer.observe({ entryTypes: ['longtask'] });
+        </script>
 
 
         <div class="content__grid-videos">
@@ -209,7 +222,8 @@
 
         <article class="recents-articles__input">
             <figure>
-                <img class="recents-articles__img" loading="lazy" src="./assets/images/gira.webp" alt="Gira 2024" width="400" height="400">
+                <img class="recents-articles__img" loading="lazy" src="./assets/images/gira.webp" alt="Gira 2024"
+                    width="400" height="400">
                 <figcaption class="recents-articles__img-copyright">© Mägo de Oz, Oficial</figcaption>
             </figure>
 
@@ -220,8 +234,8 @@
 
         <article class="recents-articles__input">
             <figure>
-                <img class="recents-articles__img" loading="lazy" src="./assets/images/mago_oz_veracruz.webp" width="400" height="400"
-                    alt="Presentación en Veracruz">
+                <img class="recents-articles__img" loading="lazy" src="./assets/images/mago_oz_veracruz.webp"
+                    width="400" height="400" alt="Presentación en Veracruz">
                 <figcaption class="recents-articles__img-copyright">© Mägo de Oz, Oficial</figcaption>
             </figure>
 
