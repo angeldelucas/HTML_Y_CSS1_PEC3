@@ -193,7 +193,7 @@ function nextPresentationMenuAutomatic(currentElto) {
     articles[currentElto].className = "info__block";
     iconsMenu[currentElto].className = "menu__icon icon-active";
 }
- 
+
 // Temporizadores que controlan el cambio de elemento en los menús 
 // automáticos en las vistas de presentación y portada
 setInterval(function () {
@@ -399,4 +399,26 @@ window.addEventListener("resize", function () {
     });
 });
 
+let video1Detalle = document.getElementById("video-1-detalle");
+let video1DetalleSrc = "https://www.youtube.com/embed/t7ChwO0oJ-A?&autoplay=1";
 
+let video2Detalle = document.getElementById("video-2-detalle");
+let video2DetalleSrc = "https://www.youtube.com/embed/JDQIPNpCxmc?&autoplay=1";
+
+function insertVideo (elto, link){
+
+    elto.innerHTML = '';
+    let iframe = document.createElement('iframe');
+    iframe.allow = "autoplay";
+    iframe.className = "container-video__iframe-video";
+    iframe.setAttribute("src", link);
+    elto.appendChild(iframe);
+};
+
+video1Detalle.addEventListener('click', () => {
+    insertVideo(video1Detalle, video1DetalleSrc);
+});
+
+video2Detalle.addEventListener('click', () => {
+    insertVideo(video2Detalle, video2DetalleSrc);
+});
